@@ -135,26 +135,18 @@ contenedorAnimado.insertAdjacentElement('afterbegin',ultimaSeccionAnimada);
 const moverDerecha = ()=>{
     let ultimaSeccionAnimada = document.querySelectorAll(".seccion-animada")[0];
     contenedorAnimado.style.marginLeft= "-200%";
-    // contenedorAnimado.style.transition= "all 2s";
-
      
-
- 
 for(let i =0;i < iconoPastel.length ; i++){
        iconoPastel[i].style.opacity = 0;
-    //    iconoPastel[i].style.transition = "all 300ms"
 } 
 for(let i =0;i < textoDinamico.length ; i++){
     textoDinamico[i].style.opacity = 0;
-    // textoDinamico[i].style.transition = "all 1s"
 } 
 setTimeout(()=>{
-    contenedorAnimado.style.transition="none";
     contenedorAnimado.insertAdjacentElement('beforeend',ultimaSeccionAnimada);
     contenedorAnimado.style.marginLeft="-100%";
     
 },3000);
-
 
 
 setTimeout(()=>{
