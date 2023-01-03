@@ -81,7 +81,7 @@ function efectoScroll(){
     let scrollTop = document.documentElement.scrollTop;
     for(let i =0;i < lista.length ; i++){
         let distanciaAltura =  lista[i].offsetTop;
-        if(distanciaAltura   < scrollTop){
+        if(distanciaAltura  < scrollTop){
             lista[i].style.background= "#be8282"
             lista[i].style.transition="all 1s";
             logoImagen[i].style.height = "4em";
